@@ -26,26 +26,29 @@ function App() {
 						</header>
 						<div className="content">
 							<p><strong>Hello World! </strong> My name is Carmine Yijin Ro and I'm software engineer specializing in the frontend development using PERN stack. I have been working in the fashion industry for 10+ years in various projects and positions. I'm transitioning into tech as I believe in making work process simpler using technology. </p>
-							<span className="image main"><img src="images/pic02.jpg" alt="" /></span>
+							<span className="image main"><img src="images/fashionSoft-02.jpg" alt="" /></span>
 						</div>
 					</section>
 
 				{/* <!-- Section --> */}
 					<section>
 						<header>
-							<h2>Feugiat consequat tempus ultrices</h2>
+							<h2>Skills & Tools</h2>
 						</header>
 						<div className="content">
-							<p><strong>Etiam tristique libero</strong> eu nibh porttitor amet fermentum. Nullam venenatis erat id vehicula ultrices sed ultricies condimentum.</p>
+							<p><strong>I attended 7 months of Fullstack Academy's program </strong> 
+							 where I gained hands on experience in both <strong>front-end </strong>and <strong>back-end</strong> development using various types of languages and technologies.</p>
 							<ul className="feature-icons">
-								<li className="icon solid fa-laptop">Consequat tempus</li>
-								<li className="icon solid fa-bolt">Etiam adipiscing</li>
-								<li className="icon solid fa-signal">Libero nullam</li>
-								<li className="icon solid fa-cog">Blandit condimentum</li>
-								<li className="icon solid fa-map-marker-alt">Lorem ipsum dolor</li>
-								<li className="icon solid fa-code">Nibh amet venenatis</li>
+								<li className="icon solid fa-laptop">Javascript</li>
+								<li className="icon solid fa-bolt">Python</li>
+								<li className="icon solid fa-signal">TypeScript</li>
+								<li className="icon solid fa-cog">React</li>
+								<li className="icon solid fa-map-marker-alt">NodeJS</li>
+								<li className="icon solid fa-code">PostgreSQL</li>
+								<li className="icon solid fa-map-marker-alt">HTML</li>
+								<li className="icon solid fa-code">CSS</li>
 							</ul>
-							<p>Vehicula ultrices sed ultricies condimentum. Magna sed etiam consequat, et lorem adipiscing sed nulla. Volutpat nisl et tempus et dolor libero, feugiat magna tempus, sed et lorem adipiscing.</p>
+							<p>Through my bootcamp experience, I have learned the value of teamwork and collaboration while utilizing the <strong> Agile methodology.</strong> As a team player, I enjoy collaborating with others to achieve our goals.</p>
 						</div>
 					</section>
 
