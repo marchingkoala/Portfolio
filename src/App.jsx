@@ -55,23 +55,23 @@ function App() {
 				{/* <!-- Section --> */}
 					<section>
 						<header>
-							<h2>Ultrices erat magna sed condimentum</h2>
+							<h2>Fullstack Projects</h2>
 						</header>
 						<div className="content">
-							<p><strong>Integer mollis egestas</strong> nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam.</p>
+							<p><strong>During my time at bootcamp,</strong> I completed several fullstack web applications with my cohorts. <strong>My passion continued after graduation </strong>and I continued honing my skills building websites and doing pro-bono works.</p>
 
 							{/* <!-- Section --> */}
 								<section>
 									<header>
-										<h3>Erat aliquam</h3>
-										<p>Vehicula ultrices dolor amet ultricies et condimentum. Magna sed etiam consequat, et lorem adipiscing sed dolor sit amet, consectetur amet do eiusmod tempor incididunt  ipsum suspendisse ultrices gravida.</p>
+										<h3>Click on images to open Github repo</h3>
+										<p>Hover over the image to see its description and techs used!</p>
 									</header>
 									<div className="content">
 										<div className="gallery">
-											<a href="images/gallery/fulls/01.jpg" className="landscape"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/02.jpg"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/03.jpg"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/04.jpg" className="landscape"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
+											<a href="https://github.com/marchingkoala/Doggle" className="landscape"><img src="images/gallery/thumbs/fuzzle_thumb-01.jpg" alt="thumbnail of a dog puzzle website featuring a very cute jindo dog and a mixed breed dog" /></a>
+											<a href="https://github.com/marchingkoala/Portfolio"><img src="images/gallery/thumbs/personal_thumb-01.jpg" alt="" /></a>
+											<a href="https://github.com/2208-Capstone-Team-1/Capstone-Kitchen-Prep"><img src="images/gallery/thumbs/chefs_thumbnail-01.jpg" alt="" /></a>
+											<a href="https://github.com/2208-GS-Team-1/Comic-Overflow" className="landscape"><img src="images/gallery/thumbs/comic_thumbnail-01.jpg" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -79,7 +79,7 @@ function App() {
 							{/* <!-- Section --> */}
 								<section>
 									<header>
-										<h3>Nisl consequat</h3>
+										<h3>UI Design</h3>
 										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
 									</header>
 									<div className="content">
