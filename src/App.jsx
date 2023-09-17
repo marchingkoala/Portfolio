@@ -80,12 +80,12 @@ function App() {
 								<section>
 									<header>
 										<h3>UI Design</h3>
-										<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam sed facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet mauris. Ut magna finibus nisi nec lacinia ipsum maximus.</p>
+										<p>I have begun designing web application mock-ups for non-profit organizations and local businesses using tools like Figma, Adobe Illustrator, and Adobe Photoshop, complemented by my keen sense of design. It has been incredibly rewarding to apply both my design expertise and recently acquired coding skills for the greater good while assisting small businesses.</p>
 									</header>
 									<div className="content">
 										<div className="gallery">
-											<a href="images/gallery/fulls/05.jpg" className="landscape"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+											<a href="https://www.figma.com/file/qemiE8hqRv4WZgXmQGBjJS/Husdon-River-Sloop-Clearwater-Design?type=design&mode=design&t=qwGpHFBGSx4NJrWO-1" className="landscape"><img src="images/gallery/thumbs/pro-bono-01.jpg" alt="thumbnail of a ui mock up of non profit org" /></a>
+											<a href="https://www.figma.com/file/BDirLoJiO2RItCyEpQ1M4B/ROSA's-K9-Training?type=design&mode=design&t=qwGpHFBGSx4NJrWO-1"><img src="images/gallery/thumbs/rosa-thumb-01.jpg" alt="thumbnail of a ui mock up for a canine training website" /></a>
 											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
 										</div>
 									</div>
