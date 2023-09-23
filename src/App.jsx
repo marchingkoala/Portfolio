@@ -1,8 +1,11 @@
+import { useState } from 'react';
 import './App.css'
 import resume from '/resume/Carmine_Yijin_Ro_Resume.pdf'
+import { useForm, ValidationError } from "@formspree/react";
 
 function App() {
 
+	//handle resume download
 	const downLoad = (e) =>{
 		e.preventDefault();
 		const link = document.createElement('a');
@@ -10,6 +13,9 @@ function App() {
 		link.download = 'Carmine_Yijin_Ro_Resume.pdf';
 		link.click();
 	}
+
+	//handle email form submission
+	const [state, handleSubmit] = useForm("mjvqajnn");
 
   return (
     <>
@@ -24,7 +30,7 @@ function App() {
 							</ul>
 						</header>
 						<div className="content">
-							<span className="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+							<span className="image fill" data-position="center"><img src="images/profile-01.jpg" alt="" /></span>
 						</div>
 					</section>
 
@@ -136,9 +142,9 @@ function App() {
 									</header>
 									<div className="content">
 										<div className="gallery">
-											<a href="images/gallery/fulls/lark2.jpg" className="portrait"><img src="images/gallery/thumbs/lark_thumbnail-01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/target2.jpg" className="portrait"><img src="images/gallery/thumbs/beckam_thumb-01.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/target1.jpg" className="landscape"><img src="images/gallery/thumbs/group_thumb-01.jpg" alt="" /></a>
+											<a href="https://www.amazon.com/Dresses-Lark-Ro-Clothing/s?rh=n%3A1045024%2Cp_89%3ALark+%26+Ro" className="portrait"><img src="images/gallery/thumbs/lark_thumbnail-01.jpg" alt="" /></a>
+											<a href="https://corporate.target.com/article/2017/03/victoria-beckham-look-book" className="portrait"><img src="images/gallery/thumbs/beckam_thumb-01.jpg" alt="" /></a>
+											<a href="https://fashionista.com/2017/03/victoria-beckham-target-collection-prices" className="landscape"><img src="images/gallery/thumbs/group_thumb-01.jpg" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -167,20 +173,23 @@ function App() {
 						</header>
 						<div className="content">
 							<p><strong>Work with me!</strong> I'm excited to bring my experience as a client facing designer into software engineering. I am looking for an opportunity to learn and grow!</p>
-							<form>
+							<form onClick={handleSubmit}>
 								<div className="fields">
 									<div className="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
+										<input type="text" name="name" id="name" placeholder="Name"  />
+										<ValidationError prefix="Name" field="name" errors={state.errors} />
 									</div>
 									<div className="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
+										<input type="email" name="email" id="email" placeholder="Email"  />
+										<ValidationError prefix="Email" field="email" errors={state.errors} />
 									</div>
 									<div className="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+										<textarea name="message" id="message" placeholder="Message" rows="7"  />
+										<ValidationError prefix="Message" field="message" errors={state.errors} />
 									</div>
 								</div>
 								<ul className="actions">
-									<li><input type="submit" value="Send Message" className="button primary" /></li>
+									<li><input type="submit" value="Send Message" className="button primary" disabled={state.submitting} /></li>
 								</ul>
 							</form>
 						</div>
