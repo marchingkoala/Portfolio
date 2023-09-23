@@ -68,10 +68,38 @@ function App() {
 									</header>
 									<div className="content">
 										<div className="gallery">
-											<a href="https://github.com/marchingkoala/Doggle" className="landscape"><img src="images/gallery/thumbs/fuzzle_thumb-01.jpg" alt="thumbnail of a dog puzzle website featuring a very cute jindo dog and a mixed breed dog" /></a>
-											<a href="https://github.com/marchingkoala/Portfolio"><img src="images/gallery/thumbs/personal_thumb-01.jpg" alt="" /></a>
-											<a href="https://github.com/2208-Capstone-Team-1/Capstone-Kitchen-Prep"><img src="images/gallery/thumbs/chefs_thumbnail-01.jpg" alt="" /></a>
-											<a href="https://github.com/2208-GS-Team-1/Comic-Overflow" className="landscape"><img src="images/gallery/thumbs/comic_thumbnail-01.jpg" alt="" /></a>
+											<a href="https://github.com/marchingkoala/Doggle" className="landscape">
+												<img src="images/gallery/thumbs/fuzzle_thumb-01.jpg" alt="thumbnail of a dog puzzle website" />
+												<div className='content fade'>
+													<div className='content_title'>Fuzzle</div><br />
+													Breed DNA quiz app created with 50+ user survey to conquer breed biases and promote adoption.<br />
+													Javascript, HTML, CSS, React JS, PostgreSQL, Express REST API, Node JS, Git
+												</div>
+											</a>
+											<a href="https://github.com/marchingkoala/Portfolio">
+												<img src="images/gallery/thumbs/personal_thumb-01.jpg" alt="" />
+												<div className='content fade'>
+													<div className='content_title'>Portolio Website</div><br />
+													Responsive website featuring my portfolio<br />
+													Javascript, HTML, CSS, VITE React, Git
+												</div>
+											</a>
+											<a href="https://github.com/2208-Capstone-Team-1/Capstone-Kitchen-Prep">
+												<img src="images/gallery/thumbs/chefs_thumbnail-01.jpg" alt="" />
+												<div className='content fade'>
+													<div className='content_title'>Chef's Kiss</div><br />
+													Alexa integrated kitchen helper app<br />
+													Typescript, HTML, CSS, React, PostgreSQL, Express, AWS Lambda, Firebase, Git
+												</div>
+											</a>
+											<a href="https://github.com/2208-GS-Team-1/Comic-Overflow" className="landscape">
+												<img src="images/gallery/thumbs/comic_thumbnail-01.jpg" alt="" />
+												<div className='content fade'>
+													<div className='content_title'>Comic Overflow</div><br />
+													E-commerce website for comic shop<br />
+													Javascript, HTML, CSS, Material UI, React, Redux, PostgreSQL, Express, AWS Lambda, Firebase, Git
+												</div>
+											</a>
 										</div>
 									</div>
 								</section>
