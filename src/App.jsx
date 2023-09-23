@@ -1,6 +1,15 @@
 import './App.css'
+import resume from '/resume/Carmine_Yijin_Ro_Resume.pdf'
 
 function App() {
+
+	const downLoad = (e) =>{
+		e.preventDefault();
+		const link = document.createElement('a');
+		link.href = resume;
+		link.download = 'Carmine_Yijin_Ro_Resume.pdf';
+		link.click();
+	}
 
   return (
     <>
@@ -122,14 +131,14 @@ function App() {
 							{/* <!-- Section --> */}
 								<section>
 									<header>
-										<h3>Lorem gravida</h3>
-										<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
+										<h3>Fashion Design</h3>
+										<p>My experience in the world of mass market design and vendor/buyer relations has taught me how to anticipate how people might think about and interact with products. I am excited to bring this perspective to software engineering, where understanding user experience is essential to creating intuitive and effective digital products.</p>
 									</header>
 									<div className="content">
 										<div className="gallery">
-											<a href="images/gallery/fulls/08.jpg" className="portrait"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/09.jpg" className="portrait"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
-											<a href="images/gallery/fulls/10.jpg" className="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/lark2.jpg" className="portrait"><img src="images/gallery/thumbs/lark_thumbnail-01.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/target2.jpg" className="portrait"><img src="images/gallery/thumbs/beckam_thumb-01.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/target1.jpg" className="landscape"><img src="images/gallery/thumbs/group_thumb-01.jpg" alt="" /></a>
 										</div>
 									</div>
 								</section>
@@ -140,13 +149,13 @@ function App() {
 				{/* <!-- Section --> */}
 					<section>
 						<header>
-							<h2>Duis sed adpiscing veroeros amet</h2>
+							<h2>Learn More</h2>
 						</header>
 						<div className="content">
-							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<p><strong>Interested in seeing more?</strong> Click on below to download my resume and explore my Github Repo.</p>
 							<ul className="actions">
-								<li><a href="#" className="button primary large">Get Started</a></li>
-								<li><a href="#" className="button large">Learn More</a></li>
+								<li><a href={resume} download={"Carmine_Yijin_Ro_Resume.pdf"} onClick={downLoad} className="button primary large">Download Resume</a></li>
+								<li><a href="https://github.com/marchingkoala" className="button large">Github</a></li>
 							</ul>
 						</div>
 					</section>
@@ -157,7 +166,7 @@ function App() {
 							<h2>Get in touch</h2>
 						</header>
 						<div className="content">
-							<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+							<p><strong>Work with me!</strong> I'm excited to bring my experience as a client facing designer into software engineering. I am looking for an opportunity to learn and grow!</p>
 							<form>
 								<div className="fields">
 									<div className="field half">
@@ -179,25 +188,17 @@ function App() {
 							<ul className="items">
 								<li>
 									<h3>Email</h3>
-									<a href="#">information@untitled.ext</a>
+									<a href="#">yri.carmine@gmail.com</a>
 								</li>
 								<li>
-									<h3>Phone</h3>
-									<a href="#">(000) 000-0000</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>1234 Somewhere Road, Nashville, TN 00000</span>
+									<h3>Location</h3>
+									<span>New York, NY</span>
 								</li>
 								<li>
 									<h3>Elsewhere</h3>
 									<ul className="icons">
-										<li><a href="#" className="icon brands fa-twitter"><span className="label">Twitter</span></a></li>
-										<li><a href="#" className="icon brands fa-facebook-f"><span className="label">Facebook</span></a></li>
-										<li><a href="#" className="icon brands fa-instagram"><span className="label">Instagram</span></a></li>
-										<li><a href="#" className="icon brands fa-linkedin-in"><span className="label">LinkedIn</span></a></li>
-										<li><a href="#" className="icon brands fa-github"><span className="label">GitHub</span></a></li>
-										<li><a href="#" className="icon brands fa-codepen"><span className="label">Codepen</span></a></li>
+										<li><a href="https://github.com/marchingkoala" className="icon" style={{marginRight: "10px"}}><img src="images/github.png" width="45px" height="auto" /></a></li>
+										<li><a href="https://www.linkedin.com/in/carminero0921/" className="icon" style={{marginRight: "10px"}}><img src="images/linkedin.png" width="45px" height="auto" /></a></li>
 									</ul>
 								</li>
 							</ul>
