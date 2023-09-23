@@ -3063,6 +3063,43 @@ a.arrow:before {
   width: 100%;
 }
 
+.gallery a .content {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.828);
+    padding: 2rem;
+    color: white;
+    display: flex;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    letter-spacing: 0.0375em;
+    line-height: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery a .content .content_title {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  letter-spacing: 0.0375em;
+  line-height: 2;
+  font-size: 20pt;
+  font-style:  bold;
+}
+
+.gallery a img, 
+.gallery a .content{
+  transition: 200ms ease-in-out;
+}
+
+.gallery a .content.fade{
+  opacity: 0;
+}
+
+.gallery a:hover .content.fade {
+  opacity: 1;
+}
+
 .gallery a.landscape {
   width: 100%;
 }
