@@ -2107,7 +2107,7 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		border-radius: 0.325rem;
-		border: solid 2px rgba(144, 144, 144, 0.25);
+		border: solid 2px rgba(186, 183, 255, 0.25);
 		color: inherit;
 		display: block;
 		outline: 0;
