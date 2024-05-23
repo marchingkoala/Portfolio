@@ -160,7 +160,7 @@ function App() {
 						<div className="content">
 							<p><strong>Interested in seeing more?</strong> Click on below to download my resume and explore my Github Repo.</p>
 							<ul className="actions">
-								{/* <li><a href={resume} download={"Carmine_Yijin_Ro_Resume.pdf"} onClick={downLoad} className="button primary large">Download Resume</a></li> */}
+								<li><a href={resume} className="button primary large">Download Resume</a></li>
 								<li><a href="https://github.com/marchingkoala" className="button large">Github</a></li>
 							</ul>
 						</div>
