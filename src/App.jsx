@@ -1,18 +1,17 @@
 import { useState } from 'react';
 import './App.css'
-import resume from '/resume/Carmine_Yijin_Ro_Resume.pdf'
 import { useForm, ValidationError } from "@formspree/react";
 
 function App() {
 
 	//handle resume download
-	const downLoad = (e) =>{
-		e.preventDefault();
-		const link = document.createElement('a');
-		link.href = resume;
-		link.download = 'Carmine_Yijin_Ro_Resume.pdf';
-		link.click();
-	}
+	// const downLoad = (e) =>{
+	// 	e.preventDefault();
+	// 	const link = document.createElement('a');
+	// 	link.href = resume;
+	// 	link.download = 'Carmine_Yijin_Ro_Resume.pdf';
+	// 	link.click();
+	// }
 
 	//handle email form submission
 	const [state, handleSubmit] = useForm("mjvqajnn");
@@ -158,9 +157,9 @@ function App() {
 							<h2>Learn More</h2>
 						</header>
 						<div className="content">
-							<p><strong>Interested in seeing more?</strong> Click on below to download my resume and explore my Github Repo.</p>
+							<p><strong>Interested in seeing more?</strong> Click on below to view my Linkedin and explore my Github Repo.</p>
 							<ul className="actions">
-								<li><a href={resume} className="button primary large">Download Resume</a></li>
+								<li><a href="https://www.linkedin.com/in/carminero0921/" className="button primary large">View LinkedIn</a></li>
 								<li><a href="https://github.com/marchingkoala" className="button large">Github</a></li>
 							</ul>
 						</div>
