@@ -1,3 +1,5 @@
+import { menuGlowStyles } from './StyleUtil'
+
 const aboutHoverStyles = `
   .about-logo-button {
     transition: transform 0.25s ease, filter 0.25s ease;
@@ -8,21 +10,12 @@ const aboutHoverStyles = `
     filter: drop-shadow(0 4px 14px rgba(255, 255, 255, 0.35));
     outline: none;
   }
-
-  .about-footer-link {
-    transition: opacity 0.25s ease, text-shadow 0.25s ease;
-  }
-  .about-footer-link:hover,
-  .about-footer-link:focus-visible {
-    opacity: 0.75;
-    outline: none;
-  }
 `
 
 function About() {
   const ink = '#f5f5f5'
   const scriptFont = "'Bickham Script Pro', sans-serif"
-  const serifFont = "'Cormorant', serif"
+  const serifFont = "'Spectral', serif"
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -153,19 +146,21 @@ function About() {
       zIndex: 2,
     },
     footerLink: {
-      fontFamily: scriptFont,
+      fontFamily: serifFont,
       fontStyle: 'italic',
       fontWeight: 400,
       fontSize: 'clamp(1.15rem, 2.2vw, 1.7rem)',
       color: ink,
       textDecoration: 'none',
       textShadow: '0 1px 10px rgba(0, 0, 0, 0.55)',
+      borderBottom: 'none'
     },
   }
 
   return (
     <section id="about" style={styles.section} aria-label="About me">
       <style>{aboutHoverStyles}</style>
+      <style>{menuGlowStyles}</style>
 
       <a
         href="#"
@@ -204,8 +199,8 @@ function About() {
       </div>
 
       <div style={styles.footerLinkWrap}>
-        <a href="#experience" className="about-footer-link" style={styles.footerLink}>
-          Head over to Experience
+        <a href="#experience" className="glow-on-hover" style={styles.footerLink}>
+          Head over to Experience &darr;
         </a>
       </div>
     </section>

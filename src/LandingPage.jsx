@@ -1,31 +1,11 @@
+import { menuGlowStyles } from './StyleUtil'
+
 const menuItems = [
   { id: 'about', number: '1', label: 'About', top: '27%', left: '54%' },
   { id: 'experience', number: '2', label: 'Experience', top: '48%', left: '34%' },
   { id: 'projects', number: '3', label: 'Projects', top: '68%', left: '56%' },
   { id: 'contact', number: '4', label: 'Contact', top: '80%', left: '31%' },
 ]
-
-const menuGlowStyles = `
-  @keyframes landing-menu-glow {
-    0%, 100% {
-      opacity: 0.75;
-      text-shadow: 0 1px 8px rgba(255, 255, 255, 0.25);
-    }
-    50% {
-      opacity: 1;
-      text-shadow:
-        0 0 6px rgba(255, 255, 255, 0.95),
-        0 0 18px rgba(255, 255, 255, 0.7),
-        0 0 32px rgba(255, 255, 255, 0.45);
-    }
-  }
-
-  .landing-menu-item:hover,
-  .landing-menu-item:focus-visible {
-    animation: landing-menu-glow 1.7s ease-in-out infinite;
-    outline: none;
-  }
-`
 
 function LandingPage() {
   const ink = '#f5f5f5'
@@ -148,7 +128,7 @@ function LandingPage() {
             <a
               key={item.id}
               href={`#${item.id}`}
-              className="landing-menu-item"
+              className="landing-menu-item glow-on-hover"
               style={{
                 ...styles.menuItem,
                 top: item.top,

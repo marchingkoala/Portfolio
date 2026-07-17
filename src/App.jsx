@@ -2,6 +2,9 @@ import './App.css'
 import { useForm, ValidationError } from "@formspree/react";
 import LandingPage from './LandingPage'
 import About from './About'
+import Experience from './Experience'
+import Projects from './Projects'
+import Contact from './Contact'
 
 function App() {
 
@@ -21,6 +24,9 @@ function App() {
     <>
       <LandingPage />
       <About />
+      <Experience />
+      <Projects />
+      <Contact />
       <div id="wrapper">
 				{/* <!-- Intro --> */}
 					<section className="intro">
