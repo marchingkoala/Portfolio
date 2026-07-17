@@ -1,12 +1,19 @@
-# Personal Portfolio Website
+# Carmine Yijin Ro — Portfolio
 
-Using the html template provided by HTML5 UP, I quickly built a personal portfolio website. 
+www.carmcodes.com
 
-The original code was purely written in html with jquery, but I wanted to gain speed and organize codes more effectively by implementing React by Vite. 
+Personal portfolio site built with React + Vite, showcasing my background, experience, and projects as a frontend software engineer.
 
-The overhaul involved deep diving into the numerous lines of code and disecting them in to different compartments if necessary.
+## Sections
 
-I personalized the website using the original frame by editing CSS attributes and adding images.
+- **Landing** — animated intro with lotus background and scattered navigation
+- **About** — bio, photo, and background
+- **Experience** — education, work history, skills, and tools
+- **Projects** — featured project case studies with live/GitHub links
+- **Contact** — links to LinkedIn, GitHub, and email
 
+## Tech Stack
 
-# Portfolio
+- React 18 + Vite
+- Plain CSS-in-JS (inline styles + injected `<style>` blocks) for animations and responsive breakpoints
+- Deployed on [Render](https://render.com)
