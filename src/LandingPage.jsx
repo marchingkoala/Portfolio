@@ -1,5 +1,40 @@
 import { menuGlowStyles } from './StyleUtil'
 
+const landingResponsiveStyles = `
+  @media (max-width: 900px) {
+    .landing-header {
+      top: clamp(1.5rem, 5vw, 2.5rem) !important;
+    }
+    .landing-subtitle {
+      position: static !important;
+      display: block !important;
+      text-align: center !important;
+      white-space: normal !important;
+      margin-top: 0.35em !important;
+    }
+    .landing-nav {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: clamp(1rem, 4.5vw, 1.75rem) !important;
+      padding: 0 8vw !important;
+      box-sizing: border-box !important;
+      width: 100% !important;
+    }
+    .landing-menu-item {
+      position: static !important;
+      text-align: center !important;
+      font-size: clamp(1.7rem, 6.2vw, 2.5rem) !important;
+    }
+    /* Staggered zigzag placement, echoing the desktop scatter layout */
+    .landing-menu-item:nth-child(1) { align-self: flex-end !important; margin-right: 4vw !important; }
+    .landing-menu-item:nth-child(2) { align-self: flex-start !important; margin-left: 2vw !important; }
+    .landing-menu-item:nth-child(3) { align-self: flex-end !important; margin-right: 8vw !important; }
+    .landing-menu-item:nth-child(4) { align-self: flex-start !important; margin-left: 4vw !important; }
+  }
+`
+
 const menuItems = [
   { id: 'about', number: '1', label: 'About', top: '27%', left: '54%' },
   { id: 'experience', number: '2', label: 'Experience', top: '48%', left: '34%' },
@@ -53,7 +88,7 @@ function LandingPage() {
       fontFamily: font,
       fontStyle: 'italic',
       fontWeight: 400,
-      fontSize: 'clamp(6.552rem, 17.472vw, 12.376rem)',
+      fontSize: 'clamp(2.75rem, 17.472vw, 12.376rem)',
       lineHeight: 0.9,
       letterSpacing: '0.02em',
       textTransform: 'none',
@@ -122,15 +157,16 @@ function LandingPage() {
   return (
     <section style={styles.landing} aria-label="Portfolio landing">
       <style>{menuGlowStyles}</style>
+      <style>{landingResponsiveStyles}</style>
       <div style={styles.content}>
-        <header style={styles.header}>
+        <header style={styles.header} className="landing-header">
           <div style={styles.brand}>
-            <h1 style={styles.title}>Portfolio</h1>
-            <p style={styles.subtitle}>of Carmine Yijin Ro</p>
+            <h1 style={styles.title} className="landing-title">Portfolio</h1>
+            <p style={styles.subtitle} className="landing-subtitle">of Carmine Yijin Ro</p>
           </div>
         </header>
 
-        <nav style={styles.nav} aria-label="Primary">
+        <nav style={styles.nav} className="landing-nav" aria-label="Primary">
           {menuItems.map((item) => (
             <a
               key={item.id}

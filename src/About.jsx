@@ -10,6 +10,33 @@ const aboutHoverStyles = `
     filter: drop-shadow(0 4px 14px rgba(255, 255, 255, 0.35));
     outline: none;
   }
+
+  @media (max-width: 800px) {
+    .about-container {
+      flex-direction: column !important;
+      text-align: center !important;
+      gap: clamp(1.5rem, 5vw, 2.5rem) !important;
+    }
+    .about-header-block {
+      align-items: center !important;
+      text-align: center !important;
+    }
+    .about-photo-wrap {
+      width: clamp(180px, 55vw, 260px) !important;
+    }
+    .about-text-col {
+      min-width: 0 !important;
+    }
+    .about-paragraph {
+      text-align: left !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: clamp(2.6rem, 15vw, 3.6rem) !important;
+    }
+  }
 `
 
 function About() {
@@ -175,24 +202,24 @@ function About() {
         <img src="/images/butterfly5.png" alt="Back to top" style={styles.logoImage} />
       </a>
 
-      <div style={styles.container}>
-        <div style={styles.photoWrap}>
+      <div style={styles.container} className="about-container">
+        <div style={styles.photoWrap} className="about-photo-wrap">
           <img src="/images/profile_photo.jpg" alt="Portrait of Carmine Yijin Ro" style={styles.photo} />
         </div>
 
-        <div style={styles.textCol}>
-          <div style={styles.headerBlock}>
-            <h2 style={styles.title}>About Me</h2>
+        <div style={styles.textCol} className="about-text-col">
+          <div style={styles.headerBlock} className="about-header-block">
+            <h2 style={styles.title} className="about-title">About Me</h2>
             <div style={styles.dividerRow}>
               <span style={styles.dividerLine} />
               <span style={styles.subtitle}>Software Engineer</span>
             </div>
           </div>
 
-          <p style={styles.paragraph}>
+          <p style={styles.paragraph} className="about-paragraph">
             I'm Carmine Yijin Ro, a Frontend Software Engineer and multidisciplinary designer based on the East Coast of the United States. I combine a background in visual design with modern frontend engineering to build digital products that are both visually compelling and thoughtfully engineered.
           </p>
-          <p style={styles.paragraph}>
+          <p style={styles.paragraph} className="about-paragraph">
             My strengths lie in bridging design and development. Drawing from years of experience in visual design and modern frontend technologies, I specialize in translating creative concepts into polished, performant interfaces. I'm especially passionate about transforming high-fidelity designs into accessible, pixel-perfect experiences that balance aesthetics, usability, and performance.
           </p>
         </div>

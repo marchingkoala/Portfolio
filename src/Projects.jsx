@@ -1,5 +1,23 @@
 import { menuGlowStyles } from './StyleUtil'
 
+const projectsResponsiveStyles = `
+  @media (max-width: 900px) {
+    .projects-grid {
+      grid-template-columns: 1fr !important;
+      gap: clamp(2rem, 6vw, 3rem) !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .projects-title {
+      font-size: clamp(2.6rem, 15vw, 3.6rem) !important;
+    }
+    .projects-grid p {
+      text-align: left !important;
+    }
+  }
+`
+
 const projects = [
   {
     name: 'Between Light',
@@ -126,10 +144,11 @@ function Projects() {
   return (
     <section id="projects" style={styles.section} aria-label="Projects">
       <style>{menuGlowStyles}</style>
+      <style>{projectsResponsiveStyles}</style>
 
-      <h2 style={styles.title}>Projects</h2>
+      <h2 style={styles.title} className="projects-title">Projects</h2>
 
-      <div style={styles.grid}>
+      <div style={styles.grid} className="projects-grid">
         {projects.map((project) => (
           <div key={project.name} style={styles.card}>
             <img src={project.thumb} alt={`${project.name} thumbnail`} style={styles.thumb} />

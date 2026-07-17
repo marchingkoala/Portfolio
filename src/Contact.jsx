@@ -28,6 +28,27 @@ const contactGlowStyles = `
    animation: butterfly-glow 3.4s ease-in-out infinite,
               butterfly-float-flipped 7s ease-in-out infinite;
   }
+
+  @media (max-width: 700px) {
+    .contact-link-row {
+      flex-wrap: wrap !important;
+    }
+    .contact-link-row a {
+      word-break: break-word !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-title {
+      font-size: clamp(2.6rem, 15vw, 3.6rem) !important;
+    }
+    .contact-container p {
+      text-align: left !important;
+    }
+    .contact-butterfly {
+      width: clamp(60px, 22vw, 100px) !important;
+    }
+  }
 `
 
 const contactLinks = [
@@ -186,8 +207,8 @@ function Contact() {
       <img src="/images/butterfly4.png" alt="" aria-hidden="true" className="contact-butterfly" style={styles.butterflyTop} />
       <img src="/images/butterfly4.png" alt="" aria-hidden="true" className="contact-butterfly lower" style={styles.butterflyBottom} />
 
-      <div style={styles.container}>
-        <h2 style={styles.title}>Contact Me</h2>
+      <div style={styles.container} className="contact-container">
+        <h2 style={styles.title} className="contact-title">Contact Me</h2>
 
         <p style={styles.body}>
           I design and build thoughtful digital experiences at the intersection of design and engineering. With a background in product design and professional frontend development, I enjoy creating polished interfaces, reusable component systems, and intuitive user experiences that make complex applications feel simple. I'm especially drawn to frontend challenges involving dynamic interfaces, animations, and data-rich interactions. I'm driven by building software that feels as good as it functions.
@@ -195,7 +216,7 @@ function Contact() {
 
         <div style={styles.linkList}>
           {contactLinks.map((link) => (
-            <div key={link.id} style={styles.linkRow}>
+            <div key={link.id} style={styles.linkRow} className="contact-link-row">
               <img src={link.icon} alt={`${link.label} icon`} style={styles.icon} />
               <a
                 href={link.href}
@@ -203,7 +224,7 @@ function Contact() {
                 style={styles.linkText}
                 {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               >
-                {link.label} {link.display}
+                {link.display}
               </a>
             </div>
           ))}

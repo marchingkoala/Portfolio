@@ -1,5 +1,23 @@
 import { menuGlowStyles } from './StyleUtil'
 
+const experienceResponsiveStyles = `
+  @media (max-width: 900px) {
+    .experience-grid {
+      grid-template-columns: 1fr !important;
+      gap: clamp(2.5rem, 6vw, 3.5rem) !important;
+    }
+    .experience-column h2 {
+      text-align: center !important;
+    }
+    .exp-logo-row {
+      justify-content: center !important;
+    }
+    .resume_container {
+      align-items: center !important;
+    }
+  }
+`
+
 const otherTools = [
   { src: '/images/logos/adobe-photoshop.png', alt: 'Adobe Photoshop' },
   { src: '/images/logos/adobe-illustrator.png', alt: 'Adobe Illustrator' },
@@ -137,10 +155,12 @@ function Experience() {
   return (
     <section id="experience" style={styles.section} aria-label="Experience">
       <style>{menuGlowStyles}</style>
+      <style>{experienceResponsiveStyles}</style>
 
-      <div style={styles.grid}>
+      <div style={styles.grid} className="experience-grid">
         {/* Left column: Education + Skills */}
-        <div style={styles.column}>
+        <div style={styles.column} className="experience-column">
+
           <h2 style={styles.header}>Education</h2>
           <p style={styles.body}>- FullStack Academy Software Engineering Bootcamp</p>
           <p style={styles.body}>- School of Art Institute of Chicago (MA in Art &amp; Design)</p>
@@ -156,7 +176,7 @@ function Experience() {
         </div>
 
         {/* Middle column: Work Experience */}
-        <div style={styles.column}>
+        <div style={styles.column} className="experience-column">
           <h2 style={{ ...styles.header, textAlign: 'center' }}>Work Experience</h2>
 
           <div style={styles.jobBlock}>
@@ -178,16 +198,16 @@ function Experience() {
         </div>
 
         {/* Right column: Other Tools + Ai Tools */}
-        <div style={styles.column}>
+        <div style={styles.column} className="experience-column">
           <h2 style={{ ...styles.header, textAlign: 'right' }}>Other Tools</h2>
-          <div style={{ ...styles.logoRow, justifyContent: 'flex-end' }}>
+          <div style={{ ...styles.logoRow, justifyContent: 'flex-end' }} className="exp-logo-row">
             {otherTools.map((tool) => (
               <img key={tool.alt} src={tool.src} alt={tool.alt} title={tool.alt} style={styles.logo} />
             ))}
           </div>
 
           <h2 style={{ ...styles.header, ...styles.headerSpaced, textAlign: 'right' }}>Ai Tools</h2>
-          <div style={{ ...styles.logoRow, justifyContent: 'flex-end' }}>
+          <div style={{ ...styles.logoRow, justifyContent: 'flex-end' }} className="exp-logo-row">
             {aiTools.map((tool) => (
               <img key={tool.alt} src={tool.src} alt={tool.alt} title={tool.alt} style={styles.logo} />
             ))}
