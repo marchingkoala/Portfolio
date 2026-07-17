@@ -11,6 +11,7 @@ const landingResponsiveStyles = `
       text-align: center !important;
       white-space: normal !important;
       margin-top: 0.35em !important;
+      font-size: clamp(1.25rem, 6.5vw, 1.75rem) !important;
     }
     .landing-nav {
       display: flex !important;

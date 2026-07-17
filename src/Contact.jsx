@@ -211,7 +211,7 @@ function Contact() {
         <h2 style={styles.title} className="contact-title">Contact Me</h2>
 
         <p style={styles.body}>
-          I design and build thoughtful digital experiences at the intersection of design and engineering. With a background in product design and professional frontend development, I enjoy creating polished interfaces, reusable component systems, and intuitive user experiences that make complex applications feel simple. I'm especially drawn to frontend challenges involving dynamic interfaces, animations, and data-rich interactions. I'm driven by building software that feels as good as it functions.
+          I design and build thoughtful digital experiences at the intersection of design and engineering. With a background in fashion design and professional frontend development, I enjoy creating elegant interfaces, reusable component systems, and intuitive user experiences that make complex applications feel simple. I'm especially drawn to frontend challenges involving dynamic interfaces, animations, and data-rich interactions. I'm driven by building software that feels as good as it functions.
         </p>
 
         <div style={styles.linkList}>
