@@ -1,5 +1,4 @@
 import './App.css'
-import { useForm, ValidationError } from "@formspree/react";
 import LandingPage from './LandingPage'
 import About from './About'
 import Experience from './Experience'
@@ -8,18 +7,6 @@ import Contact from './Contact'
 
 function App() {
 
-	//handle resume download
-	// const downLoad = (e) =>{
-	// 	e.preventDefault();
-	// 	const link = document.createElement('a');
-	// 	link.href = resume;
-	// 	link.download = 'Carmine_Yijin_Ro_Resume.pdf';
-	// 	link.click();
-	// }
-
-	//handle email form submission
-	const [state, handleSubmit] = useForm("mjvqajnn");
-
   return (
     <>
       <LandingPage />
@@ -27,9 +14,9 @@ function App() {
       <Experience />
       <Projects />
       <Contact />
-      <div id="wrapper">
+      {/* <div id="wrapper"> */}
 				{/* <!-- Intro --> */}
-					<section className="intro">
+					{/* <section className="intro">
 						<header>
 							<h1>Carmine Yijin Ro</h1>
 							<p>Software engineer & Designer <a href="https://github.com/marchingkoala">@marchingkoala</a> / <a href="https://www.linkedin.com/in/carminero0921/">Linkedin</a></p>
@@ -40,10 +27,10 @@ function App() {
 						<div className="content">
 							<span className="image fill" data-position="center"><img src="images/profile-01.jpg" alt="" /></span>
 						</div>
-					</section>
+					</section> */}
 
 				{/* <!-- Section --> */}
-					<section id="first">
+					{/* <section id="first">
 						<header>
 							<h2>About me</h2>
 						</header>
@@ -51,10 +38,10 @@ function App() {
 							<p><strong>Hello World! </strong> My name is Carmine Yijin Ro and I'm software engineer specializing in the frontend development using PERN stack. I have been working in the fashion industry for 10+ years in various projects and positions. I'm transitioning into tech as I believe in making work process simpler using technology. </p>
 							<span className="image main"><img src="images/fashionSoft-02.jpg" alt="" /></span>
 						</div>
-					</section>
+					</section> */}
 
 				{/* <!-- Section --> */}
-					<section>
+					{/* <section>
 						<header>
 							<h2>Skills & Tools</h2>
 						</header>
@@ -73,17 +60,17 @@ function App() {
 							</ul>
 							<p>Through my bootcamp experience, I have learned the value of teamwork and collaboration while utilizing the <strong> Agile methodology.</strong> As a team player, I enjoy collaborating with others to achieve our goals.</p>
 						</div>
-					</section>
+					</section> */}
 
-				{/* <!-- Section --> */}
-					<section>
+				
+					{/* <section>
 						<header>
 							<h2>Fullstack Projects</h2>
 						</header>
 						<div className="content">
 							<p><strong>During my time at bootcamp,</strong> I completed several fullstack web applications with my cohorts. <strong>My passion continued after graduation </strong>and I continued honing my skills building websites and doing pro-bono works.</p>
 
-							{/* <!-- Section --> */}
+							
 								<section>
 									<header>
 										<h3>Click on images to open Github repo</h3>
@@ -125,10 +112,10 @@ function App() {
 											</a>
 										</div>
 									</div>
-								</section>
+								</section> */}
 
 							{/* <!-- Section --> */}
-								<section>
+								{/* <section>
 									<header>
 										<h3>UI Design</h3>
 										<p>I have begun designing web application mock-ups for non-profit organizations and local businesses using tools like Figma, Adobe Illustrator, and Adobe Photoshop, complemented by my keen sense of design. It has been incredibly rewarding to apply both my design expertise and recently acquired coding skills for the greater good while assisting small businesses.</p>
@@ -140,10 +127,10 @@ function App() {
 											<a href="images/gallery/fulls/07.jpg"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> */}
 
 							{/* <!-- Section --> */}
-								<section>
+								{/* <section>
 									<header>
 										<h3>Fashion Design</h3>
 										<p>My experience in the world of mass market design and vendor/buyer relations has taught me how to anticipate how people might think about and interact with products. I am excited to bring this perspective to software engineering, where understanding user experience is essential to creating intuitive and effective digital products.</p>
@@ -155,13 +142,13 @@ function App() {
 											<a href="https://fashionista.com/2017/03/victoria-beckham-target-collection-prices" className="landscape"><img src="images/gallery/thumbs/group_thumb-01.jpg" alt="" /></a>
 										</div>
 									</div>
-								</section>
+								</section> */}
 
-						</div>
-					</section>
+						{/* </div>
+					</section> */}
 
 				{/* <!-- Section --> */}
-					<section>
+					{/* <section>
 						<header>
 							<h2>Learn More</h2>
 						</header>
@@ -172,10 +159,10 @@ function App() {
 								<li><a href="https://github.com/marchingkoala" className="button large">Github</a></li>
 							</ul>
 						</div>
-					</section>
+					</section> */}
 
           {/* <!-- Section --> */}
-					<section>
+					{/* <section>
 						<header>
 							<h2>Get in touch</h2>
 						</header>
@@ -220,11 +207,11 @@ function App() {
 								</li>
 							</ul>
 						</footer>
-					</section>
+					</section> */}
 
 				{/* <!-- Copyright --> */}
-					<div className="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
-    </div>
+					{/* <div className="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div> */}
+    {/* </div> */}
     </>
   )
 }

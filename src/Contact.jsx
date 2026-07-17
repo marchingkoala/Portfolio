@@ -155,7 +155,27 @@ function Contact() {
       height: 'auto',
       zIndex: 0,
       pointerEvents: 'none'
-    }
+    },
+    footerLinkWrap: {
+      position: 'absolute',
+      bottom: 'clamp(1.25rem, 3vw, 2.25rem)',
+      right: 'clamp(1.25rem, 3vw, 2.25rem)',
+      zIndex: 2,
+    },
+    footerLink: {
+      fontFamily: serifFont,
+      fontStyle: 'italic',
+      fontWeight: 400,
+      fontSize: 'clamp(1.15rem, 2.2vw, 1.7rem)',
+      color: ink,
+      textDecoration: 'none',
+      textShadow: '0 1px 10px rgba(0, 0, 0, 0.55)',
+      borderBottom: 'none'
+    },
+  }
+
+   const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   return (
@@ -188,6 +208,19 @@ function Contact() {
             </div>
           ))}
         </div>
+      </div>
+      <div style={styles.footerLinkWrap}>
+        <a href="#" 
+        className="glow-on-hover" 
+        style={styles.footerLink}
+        onClick={(e) => {
+          e.preventDefault()
+          scrollToTop()
+        }}
+        aria-label="To the Top"
+        >
+          To the Top &uarr;
+        </a>
       </div>
     </section>
   )

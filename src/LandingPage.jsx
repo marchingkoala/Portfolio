@@ -112,6 +112,13 @@ function LandingPage() {
     },
   }
 
+  const scrollToContent = (contentId) => {
+    const content = document.getElementById(contentId)
+    if (content) {
+      content.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section style={styles.landing} aria-label="Portfolio landing">
       <style>{menuGlowStyles}</style>
@@ -127,12 +134,15 @@ function LandingPage() {
           {menuItems.map((item) => (
             <a
               key={item.id}
-              href={`#${item.id}`}
               className="landing-menu-item glow-on-hover"
               style={{
                 ...styles.menuItem,
                 top: item.top,
                 left: item.left,
+              }}
+              onClick={(e)=> {
+                e.preventDefault();
+                scrollToContent(item.id);
               }}
             >
               <span>{item.number}</span>
