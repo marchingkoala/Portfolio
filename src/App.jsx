@@ -1,6 +1,7 @@
-import { useState } from 'react';
 import './App.css'
 import { useForm, ValidationError } from "@formspree/react";
+import LandingPage from './LandingPage'
+import About from './About'
 
 function App() {
 
@@ -18,6 +19,8 @@ function App() {
 
   return (
     <>
+      <LandingPage />
+      <About />
       <div id="wrapper">
 				{/* <!-- Intro --> */}
 					<section className="intro">
