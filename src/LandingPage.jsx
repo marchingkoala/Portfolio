@@ -134,6 +134,7 @@ function LandingPage() {
           {menuItems.map((item) => (
             <a
               key={item.id}
+              href={`#${item.id}`}
               className="landing-menu-item glow-on-hover"
               style={{
                 ...styles.menuItem,
